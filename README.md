@@ -1,22 +1,24 @@
-#  Python Knowledge Quiz Application
+# Python Knowledge Quiz Application
 
-A dynamic, interactive desktop Quiz Application built using Python and the `tkinter` GUI framework. The application allows users to either load quiz data from an external JSON file or input custom questions manually through the terminal before launching a styled graphical interface to take the quiz. It features an animated reward mechanism and persistent result logging.
-
----
-
-##  Features
-
-* **Dual Data Input Modes:** * **File Mode (F):** Load structured questions, choices, and answers instantaneously from a `.json` configuration file.
-  * **Manual Mode (M):** Build a custom quiz on-the-fly via interactive terminal prompts.
-* **Intuitive GUI Design:** Clean layouts with custom font hierarchies, dynamic button states, and clear warning/information modal dialogues via `tkinter.messagebox`.
-* **Balloon Animation:** A visual `tkinter.Canvas` animation that flies a celebratory balloon across the screen upon selecting a correct answer.
-* **Persistent Score Logging:** Automatically appends final performance breakdowns (Total Questions, Final Score, and Score Percentage) into a local `quiz_results.txt` file for tracking progress.
+A dynamic, interactive desktop quiz application built with Python and Tkinter. This application allows users to either load pre-configured quiz questions from a JSON file or dynamically input questions manually through the command line before launching an interactive GUI.
 
 ---
 
-##  Project Structure
+## 📌 Table of Contents
+* [🚀 Features](#-features)
+* [📂 Project Structure & Setup](#-project-structure--setup)
+  * [1. JSON Data Format (Optional)](#1-json-data-format-optional)
+  * [2. How to Run](#2-how-to-run)
+* [📊 Result Logging](#-result-logging)
+* [📝 Code Breakdown](#-code-breakdown)
 
-```text
-├── quiz_app.py          # Main application source code
-├── data.json            # Sample quiz data file (JSON format)
-└── quiz_results.txt     # Generated log file tracking user performance
+---
+
+## 🚀 Features
+
+* **Dual Data Input Modes:** * **File Mode (`F`):** Load structured questions, multiple-choice options, and answers directly from a JSON file.
+  * **Manual Mode (`M`):** Input custom questions, four distinct choices, and the correct answer index directly via the CLI.
+* **Interactive GUI:** A clean Tkinter interface featuring a customized color scheme, custom typography, radio buttons for input, and error handlings.
+* **Animated Visual Feedback:** Features a custom Tkinter Canvas balloon animation (`fly_balloon`) that floats up whenever a user submits a correct answer.
+* **Persistence & Logging:** Progress is validated live, and final quiz metrics are automatically calculated and appended to a local history log file (`quiz_results.txt`).
+
