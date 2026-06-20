@@ -48,6 +48,9 @@ To run this application, you only need **Python 3.x** installed. The application
 ##  JSON Data Format
 If you choose to load quiz questions using a file, your JSON file must adhere to the following structure. Save it as data.json in the same directory as the script:
 
+## 💾 JSON Data Format
+
+```json
 {
   "question": [
     "What is the correct extension of a Python file?",
@@ -60,8 +63,7 @@ If you choose to load quiz questions using a file, your JSON file must adhere to
   "answer": [1, 2]
 }
 
-
-Note: The answer array maps directly to the 1-indexed placement of the correct choice (e.g., 1 for Option 1, 2 for Option 2).
+## Note: The answer array maps directly to the 1-indexed placement of the correct choice (e.g., 1 for Option 1, 2 for Option 2).
 
 ##  Setup & Usage Instruction
 1. Run the Script
