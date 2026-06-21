@@ -4,11 +4,11 @@ A dynamic, interactive desktop quiz application built with Python and Tkinter. T
 
 ---
 
-## 📌 Table of Contents
+##  Table of Contents
 * [Features](#-features)
 * [Prerequisites](#-Prerequisites)
 * [Setup & Usage Instruction](#-Setup_&_Usage_Instruction)
-* [📝 Code Breakdown](#-code-breakdown)
+* [Key Methods Overview](#-Key_Methods_Overview)
 
 ---
 
@@ -43,90 +43,10 @@ To run this application, you only need **Python 3.x** installed. The application
 * `json` (Data parsing)
 * `sys` (System configurations)
 
-## Setup & Usage Instruction
-1. Run the Script
-Open your terminal or command prompt, navigate to the project directory
-2. Choose Configuration Mode
-Upon launching, the console will prompt you to choose how questions are ingested:
-
-Press F: To load from a file. You can press Enter to default to data.json or type the path to your custom JSON file.
-
-Press M: To input manually. Follow the command line prompts to specify the number of questions, question text, 4 individual options, and the matching correct index integer (1-4).
-
-3. Take the Quiz
-The Graphical User Interface will automatically display:
-
-* Select an option and click Next.
-
-* If you answer correctly, an animation triggers alongside a congratulatory popup.
-
-* If you try to proceed without picking an answer, a warning popup will block progress.
-
-* Click Quit at any time to abort the session safely.
 
 
-```markdown
-# 🐍 Python Knowledge Quiz Application
 
-A dynamic, interactive desktop Quiz Application built using Python and the `tkinter` GUI framework. The application allows users to either load quiz data from an external JSON file or input custom questions manually through the terminal before launching a styled graphical interface to take the quiz. It features an animated reward mechanism and persistent result logging.
-
----
-
-## 🚀 Features
-
-* **Dual Data Input Modes:** * **File Mode (F):** Load structured questions, choices, and answers instantaneously from a `.json` configuration file.
-  * **Manual Mode (M):** Build a custom quiz on-the-fly via interactive terminal prompts.
-* **Intuitive GUI Design:** Clean layouts with custom font hierarchies, dynamic button states, and clear warning/information modal dialogues via `tkinter.messagebox`.
-* **Balloon Animation:** A visual `tkinter.Canvas` animation that flies a celebratory balloon across the screen upon selecting a correct answer.
-* **Persistent Score Logging:** Automatically appends final performance breakdowns (Total Questions, Final Score, and Score Percentage) into a local `quiz_results.txt` file for tracking progress.
-
----
-
-## 🛠️ Project Structure
-
-```text
-├── quiz_app.py          # Main application source code
-├── data.json            # Sample quiz data file (JSON format)
-└── quiz_results.txt     # Generated log file tracking user performance
-
-```
-
----
-
-## 📋 Prerequisites
-
-To run this application, you only need Python 3.x installed. The application relies entirely on Python's built-in standard libraries, meaning no third-party package installations (`pip install`) are required:
-
-* `tkinter` (GUI builder)
-* `json` (Data parsing)
-* `sys` (System configurations)
-
----
-
-## 💾 JSON Data Format
-
-If you choose to load quiz questions using a file, your JSON file must adhere to the following structure. Save it as `data.json` in the same directory as the script:
-
-```json
-{
-  "question": [
-    "What is the correct extension of a Python file?",
-    "Which keyword is used to create a function in Python?"
-  ],
-  "options": [
-    [".py", ".python", ".pyt", ".pyxt"],
-    ["function", "def", "fun", "class"]
-  ],
-  "answer": [1, 2]
-}
-
-```
-
-> 💡 **Note:** The answer array maps directly to the 1-indexed placement of the correct choice (e.g., `1` for Option 1, `2` for Option 2).
-
----
-
-## 🔧 Setup & Usage Instruction
+##  Setup & Usage Instruction
 
 ### 1. Run the Script
 
@@ -156,7 +76,7 @@ The Graphical User Interface will automatically display:
 
 ---
 
-## ⚙️ Key Methods Overview
+##  Key Methods Overview
 
 | Method / Function | Module | Description |
 | --- | --- | --- |
