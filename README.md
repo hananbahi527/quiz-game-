@@ -1,4 +1,4 @@
-# Python Knowledge Quiz Application
+# Interactive Quiz Application
 
 A dynamic, interactive desktop quiz application built with Python and Tkinter. This application allows users to either load pre-configured quiz questions from a JSON file or dynamically input questions manually through the command line before launching an interactive GUI.
 
